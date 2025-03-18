@@ -1,8 +1,62 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+/* Estilos personalizados */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Efecto de hover suave para todos los elementos interactivos */
+a, button {
+  transition: all 0.3s ease;
+}
+
+/* Efecto de desenfoque para modales y overlays */
+.backdrop-blur {
+  backdrop-filter: blur(8px);
+}
+
+/* Gradientes personalizados */
+.bg-gradient-brand {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+}
+
+/* Sombras personalizadas */
+.shadow-custom {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Animaciones de entrada */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @theme inline {
