@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
-            <span className="text-2xl font-bold text-green-600">
+            <span className="text-2xl font-bold text-primary-600">
               Fitness Cubano
             </span>
             <p className="text-gray-500 text-base">

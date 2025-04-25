@@ -54,16 +54,16 @@ const Testimonials = () => {
                   <h3 className="text-xl font-semibold text-gray-900">
                     {testimonial.name}
                   </h3>
-                  <span className="text-green-600 text-sm font-medium">
+                  <span className="text-primary-600 text-sm font-medium">
                     {testimonial.duration}
                   </span>
                 </div>
                 <p className="text-gray-600 mb-4">{testimonial.text}</p>
                 <div className="flex items-center justify-between">
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-800">
                     {testimonial.achievement}
                   </span>
-                  <button className="text-green-600 hover:text-green-700 font-medium text-sm">
+                  <button className="text-primary-600 hover:text-primary-700 font-medium text-sm">
                     Ver historia completa →
                   </button>
                 </div>
@@ -73,7 +73,7 @@ const Testimonials = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700">
+          <button className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700">
             Comienza Tu Transformación
           </button>
         </div>

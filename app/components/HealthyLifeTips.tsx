@@ -51,14 +51,14 @@ const HealthyLifeTips = () => {
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                <span className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm">
+                <span className="absolute top-4 right-4 bg-primary-500 text-white px-3 py-1 rounded-full text-sm">
                   {tip.category}
                 </span>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                 <h3 className="text-xl font-semibold mb-2">{tip.title}</h3>
                 <p className="text-sm text-gray-200">{tip.description}</p>
-                <button className="mt-4 text-green-300 hover:text-green-200 flex items-center text-sm font-medium">
+                <button className="mt-4 text-primary-300 hover:text-primary-200 flex items-center text-sm font-medium">
                   Leer más
                   <svg
                     className="ml-2 w-4 h-4"

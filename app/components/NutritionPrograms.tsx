@@ -21,7 +21,7 @@ const programs = [
 
 const NutritionPrograms = () => {
   return (
-    <section className="py-16 bg-green-50">
+    <section className="py-16 bg-primary-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
@@ -47,12 +47,12 @@ const NutritionPrograms = () => {
                 <ul className="space-y-2">
                   {program.features.map((feature) => (
                     <li key={feature} className="flex items-center text-gray-600">
-                      <span className="text-green-500 mr-2">✓</span>
+                      <span className="text-primary-500 mr-2">✓</span>
                       {feature}
                     </li>
                   ))}
                 </ul>
-                <button className="mt-6 w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition-colors duration-300">
+                <button className="mt-6 w-full bg-primary-600 text-white py-2 px-4 rounded-md hover:bg-primary-700 transition-colors duration-300">
                   Más Información
                 </button>
               </div>
