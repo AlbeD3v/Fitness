@@ -7,7 +7,8 @@ export async function GET() {
     return NextResponse.json({ 
       status: 'success', 
       message: 'Conexión a MongoDB establecida correctamente',
-      version: mongoose.version
+      version: mongoose.version,
+      env: process.env.NODE_ENV
     });
   } catch (error) {
     console.error('Error de conexión:', error);
@@ -15,7 +16,8 @@ export async function GET() {
       { 
         status: 'error', 
         message: 'Error al conectar con MongoDB',
-        error: error instanceof Error ? error.message : 'Unknown error'
+        error: error instanceof Error ? error.message : 'Unknown error',
+        env: process.env.NODE_ENV
       },
       { status: 500 }
     );
